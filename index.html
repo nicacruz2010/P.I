@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+   
+</head>
+<body>
+    <div class="site">
+
+    <!-- MENU -->
+
+    <header>
+
+        <div class="logo">
+            K-VERSE
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#albuns">Álbuns</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#inicio" class="voltar">Voltar</a>
+        </nav>
+
+    </header>
+
+
+    <!-- BANNER -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-text">
+
+            <h1>
+                Descubra o universo do kpop
+            </h1>
+
+            <p>
+                Notícia, artistas, músicas e tudo sobre o universo do kpop
+            </p>
+
+            <button class="explore"
+                    onclick="document.getElementById('albuns').scrollIntoView({behavior:'smooth'})">
+
+                EXPLORE AGORA
+
+            </button>
+
+        </div>
+
+
+        <img class="hero-img"
+             src="./img/banda.png"
+             alt="K-pop">
+
+    </section>
+
+
+    <!-- ÁLBUNS -->
+
+    <section class="albums" id="albuns">
+
+        <h2>
+            ÁLBUNS DO KPOP
+        </h2>
+
+        <div class="album-grid">
+
+            
+                <div class="album">
+                    <img src="./img/album.png"
+                    alt="Álbum 1">
+                </div>
+
+                         <div class="album">
+                         <img src="./img/album2.png"
+                         alt="Álbum 2">
+                         </div>
+
+                        <div class="album">
+                         <img src="./img/album3.png"
+                         alt="Álbum 3">
+                         </div>
+
+                         <div class="album">
+                         <img src="./img/album4.png"
+                         alt="Álbum 4">
+                         </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter" id="noticias">
+
+        <h2>
+            Você gostaria de receber notícias no seu Email?
+        </h2>
+
+        <form asp-controller="Home"
+              asp-action="Inscrever"
+              method="post">
+
+            <input type="email"
+                   name="email"
+                   placeholder="Digite seu e-mail"
+                   required>
+
+            <button type="submit">
+                Claro que eu gostaria
+            </button>
+
+    </section>
+
+</div>
+
+</section>
+<div class="imagens-artistas"
+
+<img src="./img/jiho.png " alt="Jiho">
+<img src="./img/jimin.png" alt="Jimin">
+<img src="./img/jennie.png"    alt="Jennie">
+</body>
+</html>

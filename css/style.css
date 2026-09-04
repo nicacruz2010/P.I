@@ -1,0 +1,257 @@
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: white;
+            color: #171217;
+        }
+
+        .site {
+          
+            margin: auto;
+            border-left: 1px solid #9d67d9;
+            border-right: 1px solid #9d67d9;
+        }
+
+        header {
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 35px;
+
+            border-top: 1px solid #9d67d9;
+            border-bottom: 1px solid #9d67d9;
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 19px;
+            font-weight: bold;
+            color: #8b43c9;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d26aa8;
+            font-size: 12px;
+        }
+
+        .voltar {
+            border: 1px solid #ead7ed;
+            border-radius: 20px;
+            padding: 7px 20px;
+        }
+
+        .hero {
+            min-height: 320px;
+            padding: 40px 55px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+            background: linear-gradient(
+                105deg,
+                #ffbfd2,
+                #d5b8f6
+            );
+
+            border-bottom: 1px solid #9d67d9;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .explore {
+            border: none;
+            background: #ff5f80;
+            color: white;
+
+            padding: 15px 48px;
+            border-radius: 6px;
+
+            font-family: "Playfair Display", serif;
+            font-size: 17px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .hero-img {
+            width: 240px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .albums {
+            padding: 30px 40px 45px;
+        }
+
+        .albums h2 {
+            font-family: "Playfair Display", serif;
+            color: #7e45bf;
+            font-size: 22px;
+            margin-bottom: 28px;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            justify-items: center;
+        }
+
+        .album {
+            width: 160px;
+            height: 155px;
+            border-radius: 17px;
+            overflow: hidden;
+
+            transition: 0.2s;
+        }
+
+        .album:hover {
+            transform: translateY(-5px);
+        }
+
+        .album img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .newsletter {
+            padding: 55px 20px;
+            text-align: center;
+
+            background: linear-gradient(
+                105deg,
+                #c99eb1,
+                #9f8bc5
+            );
+
+            border-top: 1px solid #9d67d9;
+            border-bottom: 1px solid #9d67d9;
+        }
+
+        .newsletter h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 23px;
+            margin-bottom: 24px;
+        }
+
+        .newsletter form {
+            max-width: 620px;
+            margin: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .newsletter input {
+            flex: 1;
+            border: none;
+            border-radius: 25px;
+            padding: 14px 20px;
+            outline: none;
+        }
+
+        .newsletter button {
+            border: none;
+            border-radius: 25px;
+            padding: 14px 25px;
+            background: white;
+
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .mensagem {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 750px) {
+
+            nav a:not(.voltar) {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 35px 22px;
+            }
+
+            .hero-img {
+                width: 100%;
+            }
+
+            .album-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .newsletter form {
+                flex-direction: column;
+            }
+            .artistas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+.imagens-artistas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 100%;
+}
+
+.imagens-artistas img {
+    width: 150px;
+    height: 165px;
+    object-fit: center;
+    border-radius: 15px;
+}
+
+.info-artista {
+    width: 200px;
+    min-height: 180px;
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+        }
+        
+        
